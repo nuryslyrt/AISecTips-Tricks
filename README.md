@@ -24,7 +24,7 @@ Welcome to the vault where I stash bite-sized, technically deep **AI-Security ti
 
 * Adversarial NLP & prompt injection
 * RAG data poisoning and retrieval attacks
-* Model-Context-Protocol (MCP) exploits
+* Model-Context-Protocol (MCP) security
 * Agent-to-Agent (A2A) risk shenanigans
 * Inference-time side channels
 * Mitigation & hardening research
