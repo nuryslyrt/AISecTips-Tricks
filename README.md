@@ -17,7 +17,7 @@
   <img src="docs/assets/aisectipbot_banner.svg" width="480" alt="AISecTipBot">
 </p>
 -->
-# AISecTipVault 🔐🤖
+# AISecTipJar 🔐🤖
 
 **AI + Security = 🔥**  
 Welcome to the vault where I stash bite-sized, technically deep **AI-Security tips & tricks** about for example:
