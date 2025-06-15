@@ -44,7 +44,7 @@ Live long, and prosper! 🖖
 
 ```bash
 git clone https://github.com/nuryslyrt/AISecTips-Tricks.git
-cd AISecTipVault
+cd AISecTips-Tricks
 less tips/2025-06-15-rag-poisoning.md  
 ```
 
