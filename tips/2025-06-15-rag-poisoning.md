@@ -1,4 +1,4 @@
-### 🤖🔒 AI-Sec Daily Tip — 2025-06-15
+### 🤖🔒 AI-Sec Tip — 2025-06-15
 
 **Embedding-collision RAG poisoning**: 
 Cosine-similarity retrieval will happily surface a document whose *direction*—not magnitude—matches the query. 
