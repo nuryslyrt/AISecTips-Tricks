@@ -15,7 +15,7 @@
 ```
 -->
 <p align="center">
-  <img src="assets/aisectipjar_banner.png" width="560" alt="AISecTipJar">
+  <img src="assets/aisectipjar_banner.png" width="360" alt="AISecTipJar">
 </p>
 
 # AISecTipJar 🔐🤖🛠️
