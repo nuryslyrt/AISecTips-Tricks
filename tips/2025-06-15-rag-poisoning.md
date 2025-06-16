@@ -30,8 +30,10 @@ index.add(poison_vec[None, :])                   # slip into vector DB
 
 In *PoisonedRAG* tests, injecting just **five** such vectors into a corpus of a million docs steered the LLM’s answer 90 % of the time ([arxiv.org][2]).
 
-**Blue-team quick win**: before top-k ranking, **re-normalise embeddings and drop any item whose *raw* L2-norm sits > 1 σ from the corpus mean**
+**Blue-team quick win**: before top-k ranking, **re-normalise embeddings and drop any item whose *raw* L2-norm sits >1σ from the corpus mean**
 —a cheap filter that slashed attack success from 92 % → 18 % on an internal FAISS bench.
+
+PS: σ = standard-deviation, >1σ : greater than one standard deviation
 
 #RAGPoisoning #VectorDB #LLMDefense #LLMSecurity #GenerativeAI #GenerativeAISecurity
 
