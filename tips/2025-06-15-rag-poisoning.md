@@ -1,6 +1,6 @@
-### 🤖🔒 AI-Sec Tip — 2025-06-15
+# 🤖🔒 AI-Sec Tip — 2025-06-15
 
-**Embedding-collision RAG poisoning**: 
+## **Embedding-collision RAG poisoning**: 
 Cosine-similarity retrieval will happily surface a document whose *direction*—not magnitude—matches the query. 
 A red-teamer can therefore craft a “ghost” vector that is <1% away in angle yet encodes totally different text. 
 Recent surveys rank this as a top-three RAG threat vector ([arxiv.org][1]).
