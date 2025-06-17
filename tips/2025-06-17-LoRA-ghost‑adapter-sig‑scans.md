@@ -1,12 +1,12 @@
-# 🤖🔒 AI-Sec Tip — 2025-06-17
+# 🤖🔒 AI-Sec Tip — 2025-06-17 - LoRA “ghost‑adapter” Sig‑Scans
 
-## LoRA “ghost‑adapter” sig‑scans: 
 Before you merge or hot‑swap any Low‑Rank Adaptation (LoRA) file, run a deterministic *digest pass* over its matrices and compare against a registry of approved hashes.
 Why? The *LoRA‑as‑an‑Attack* study shows a 4 MB adapter can hide policy‑evasion triggers and back‑doors that survive full‑precision merges.
+
 Follow‑up work such as *TeleLoRA* demonstrates how an attacker can teleport a single, permutation‑symmetric back‑door across model families, dodging base‑model checksums.
 Meanwhile, recent analyses of LLM back‑door longevity confirm that token‑level triggers planted in adapters can persist for thousands of context tokens—long enough to fire inside downstream RAG (Retrieval‑Augmented Generation) chains.
 
-Drop‑in sentinel (PyTorch, 6 lines):
+A simplified drop‑in sentinel (PyTorch, 6 lines):
 
 ```python
 import hashlib, torch, pathlib
@@ -47,7 +47,6 @@ This <2 ms hash gate turns the LoRA supply chain into a whitelisted club—no ex
 * **Supply-chain risk:** Community-shared LoRA hubs multiply exposure; OWASP’s 2025 LLM Top 10 now lists *LoRA Adapter Tampering* under “LLM-03: Supply Chain.”
 
   
-
 **Pro-tip:** Store the truncated 64-bit digest in the adapter’s filename (`chat_guard_9f3a1b2c.safetensors`). Any silent swap shows up as an instant mismatch on disk *and* at load-time.
 
 **Resources that used for creatng this bite size tip:**
