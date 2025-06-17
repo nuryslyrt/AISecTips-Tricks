@@ -55,6 +55,6 @@ Current collection of tips & tricks:
 | # | Tip                                                                          | Area(s)         |
 | - | ---------------------------------------------------------------------------- | --------------- |
 | 1 | **[2025-06-15 • RAG Embedding Poisoning](tips/2025-06-15-rag-poisoning.md)** | RAG, Embeddings |
-
+| 2 | **[2025-06-16 • Merkle-Chained Vector Chunks: tamper-proofing RAG knowledge base](tips/2025-06-16-tamper-proofing-rag.md)** | RAG, Embeddings|
 
 -EOF
