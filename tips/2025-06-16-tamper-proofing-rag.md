@@ -2,11 +2,11 @@
 
 ## Merkle-Chained Vector Chunks: tamper-proofing your RAG knowledge base
 
-LLM red-teamers keep proving that *one* poisoned chunk can hijack answers — whether via multi-hop text corruption ([arxiv.org][1], [arxiv.org][2]) or even a single booby-trapped image in multimodal RAG ([arxiv.org][3]).
-Most vector databases still write chunks as raw JSON/doc blobs; an attacker who gains commit rights (or S3 creds) can hot-swap truth for lies with zero cryptographic friction ([promptfoo.dev][4]).
+LLM red-teamers keep proving that *one* poisoned chunk can hijack answers — whether via multi-hop text corruption or even a single booby-trapped image in multimodal RAG.
+Most vector databases still write chunks as raw JSON/doc blobs; an attacker who gains commit rights (or S3 creds) can hot-swap truth for lies with zero cryptographic friction.
 
-Steal a page from blockchain forensics: wrap every chunk’s SHA-256 hash into a Merkle tree and pin the signed *root* in a config secret or KMS vault ([bytefederal.com][5], [investopedia.com][6]).
-On retrieval, verify a lightweight Merkle proof (<3 µs per 2 KB chunk on commodity CPUs) before the chunk ever reaches the LLM; mismatch ⇒ fail closed and alerts are triggered ([vldb.org][7], [www2.cs.arizona.edu][8]). 
+Steal a page from blockchain forensics: wrap every chunk’s SHA-256 hash into a Merkle tree and pin the signed *root* in a config secret or KMS vault.
+On retrieval, verify a lightweight Merkle proof (<3 µs per 2 KB chunk on commodity CPUs) before the chunk ever reaches the LLM; mismatch ⇒ fail closed and alerts are triggered. 
 This stops stealth edits dead and gives auditors cryptographic lineage for every token your model sees.
 
 ```python
@@ -52,13 +52,19 @@ thwarting Knowledge-Corruption worms before they make their way through your gen
 
 #RAGPoisoning #MerkleProof #LLMDefense #LLMSecurity #GenerativeAI #GenerativeAISecurity
 
-— End —
 
-[1]: https://arxiv.org/html/2505.11548v2 "Knowledge Poisoning Attack on Retrieval-Augmented Generation ..."
-[2]: https://arxiv.org/abs/2402.07867 "PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models"
-[3]: https://arxiv.org/html/2504.02132v2 "One Pic is All it Takes: Poisoning Visual Document Retrieval ... - arXiv"
-[4]: https://www.promptfoo.dev/blog/rag-poisoning/ "RAG Data Poisoning: Key Concepts Explained - Promptfoo"
-[5]: https://www.bytefederal.com/byteu/11/138 "2.3. Merkle trees and Data Integrity - Byte Federal"
-[6]: https://www.investopedia.com/terms/m/merkle-tree.asp "Merkle Tree in Blockchain: What It Is and How It Works"
-[7]: https://www.vldb.org/conf/2004/RS13P1.PDF "[PDF] Tamper Detection in Audit Logs - VLDB Endowment"
-[8]: https://www2.cs.arizona.edu/~kpavlou/a30-pavlou.pdf "[PDF] Forensic Analysis of Database Tampering"
+[1]: ["Knowledge Poisoning Attack on Retrieval-Augmented Generation"](https://arxiv.org/html/2505.11548v2)
+
+[2]: ["PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models"](https://arxiv.org/abs/2402.07867)
+
+[3]: ["One Pic is All it Takes: Poisoning Visual Document Retrieval - arXiv"](https://arxiv.org/html/2504.02132v2)
+
+[4]: ["RAG Data Poisoning: Key Concepts Explained - Promptfoo"](https://www.promptfoo.dev/blog/rag-poisoning/)
+
+[5]: ["2.3. Merkle trees and Data Integrity - Byte Federal"](https://www.bytefederal.com/byteu/11/138)
+
+[6]: ["Merkle Tree in Blockchain: What It Is and How It Works"](https://www.investopedia.com/terms/m/merkle-tree.asp)
+
+[7]: ["Tamper Detection in Audit Logs - VLDB Endowment"](https://www.vldb.org/conf/2004/RS13P1.PDF)
+
+— End —
