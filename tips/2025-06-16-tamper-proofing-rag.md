@@ -1,6 +1,6 @@
 # 🤖🔒 AI-Sec Tip — 2025-06-16
 
-## Merkle-Chained Vector Chunks: tamper-proofing your RAG knowledge base
+## Merkle-Chained Vector Chunks: tamper-proofing RAG knowledge base
 
 LLM red-teamers keep proving that *one* poisoned chunk can hijack answers — whether via multi-hop text corruption or even a single booby-trapped image in multimodal RAG.
 Most vector databases still write chunks as raw JSON/doc blobs; an attacker who gains commit rights (or S3 creds) can hot-swap truth for lies with zero cryptographic friction.
