@@ -24,6 +24,8 @@
 Welcome to the vault where I stash bite-sized, technically deep **AI-Security tips & tricks** about for example:
 
 * Adversarial NLP & prompt injection
+* Membership Inference attacks
+* KV cache poisoning
 * RAG data poisoning and retrieval attacks
 * Model-Context-Protocol (MCP) security
 * Agent-to-Agent (A2A) risk shenanigans
