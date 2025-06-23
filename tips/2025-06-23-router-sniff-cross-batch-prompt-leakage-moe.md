@@ -2,7 +2,7 @@
 
 ## Router-Sniff: Cross-Batch Prompt Leakage via Mixture-of-Experts (MoE) Gating
 
-Sparse MoE LLMs (e.g., Switch-Transformer families) decide *token-to-expert* routing with a lightweight “router” MLP. 
+**Sparse MoE LLMs (e.g., Switch-Transformer families)** decide *token-to-expert* routing with a lightweight “router” MLP. 
 If two users’ tokens are batched together, those router logits are **computed jointly and stored in a shared buffer**, letting one user influence—and time—another user’s routing path. 
 By sending a crafted “probe-prefix” with tokens whose embeddings sit near router decision boundaries, an attacker can detect which expert *the victim’s next token* is routed to (visible via latency spikes or public per-expert-load counters), recovering up to 8-bit entropy per token and leaking private prompts in ≤20 generations on Mistral-MoE-8B.
 
