@@ -74,22 +74,20 @@ A >1 ms latency jump while load stays flat ⇒ victim’s token reused *your* ex
 
 \[1]: ["Stealing User Prompts from Mixture of Experts"](https://arxiv.org/pdf/2410.22884)
 
-\[2]: ["Stealing User Prompts from Mixture-of-Experts Models"](https://openreview.net/forum?id=1RNSYEEpwi)
+\[2]: ["Potential Timing Side-Channel in vLLM Prefix Cache"](https://github.com/vllm-project/vllm/security/advisories/GHSA-4qjh-9fv9-r85r)
 
-\[3]: ["Potential Timing Side-Channel in vLLM Prefix Cache"](https://github.com/vllm-project/vllm/security/advisories/GHSA-4qjh-9fv9-r85r)
+\[3]: ["Cache Salting for Secure Prefix Caching in vLLM"](https://github.com/vllm-project/vllm/issues/16016)
 
-\[4]: ["Cache Salting for Secure Prefix Caching in vLLM"](https://github.com/vllm-project/vllm/issues/16016)
+\[4]: ["Switch Transformers – Hugging Face Docs"](https://huggingface.co/docs/transformers/v4.29.1/model_doc/switch_transformers)
 
-\[5]: ["Switch Transformers – Hugging Face Docs"](https://huggingface.co/docs/transformers/v4.29.1/model_doc/switch_transformers)
+\[5]: ["Implementation of Mixture of Experts using Switch Transformers"](https://medium.com/@shekharsomani98/implementation-of-mixture-of-experts-using-switch-transformers-8f25b60c33d3)
 
-\[6]: ["Implementation of Mixture of Experts using Switch Transformers"](https://medium.com/@shekharsomani98/implementation-of-mixture-of-experts-using-switch-transformers-8f25b60c33d3)
+\[6]: ["LLM Mixture of Experts Explained"](https://www.tensorops.ai/post/what-is-mixture-of-experts-llm)
 
-\[7]: ["LLM Mixture of Experts Explained"](https://www.tensorops.ai/post/what-is-mixture-of-experts-llm)
+\[7]: ["The Rise of Sparse Mixtures of Experts"](https://mlfrontiers.substack.com/p/the-rise-of-sparse-mixtures-of-experts)
 
-\[8]: ["The Rise of Sparse Mixtures of Experts"](https://mlfrontiers.substack.com/p/the-rise-of-sparse-mixtures-of-experts)
+\[8]: ["SoK: Reducing the Vulnerability of Fine-tuned LMs to Membership Inference"](https://arxiv.org/html/2403.08481v1)
 
-\[9]: ["SoK: Reducing the Vulnerability of Fine-tuned LMs to Membership Inference"](https://arxiv.org/html/2403.08481v1)
-
-\[10]: ["LoRA: Low-Rank Adaptation of Large LMs"](https://arxiv.org/abs/2106.09685)
+\[9]: ["LoRA: Low-Rank Adaptation of Large LMs"](https://arxiv.org/abs/2106.09685)
 
 — End —
