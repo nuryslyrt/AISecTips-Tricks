@@ -17,7 +17,7 @@ The "Prime+Probe" attack involves two primary phases:
 
 This timing difference (as subtle as a few nanoseconds) allows attackers to reconstruct tokens accurately.
 
-![img](../assets/2025-06-23-cache-whispering.png)
+![img](../assets/2025-06-25-cache-whispering.png)
 
 
 ### 🔧 Simplified Proof-of-Concept (PoC)
