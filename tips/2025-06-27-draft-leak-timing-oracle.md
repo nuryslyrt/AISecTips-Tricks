@@ -53,7 +53,7 @@ asyncio.run(leak())
 A 4-token secret behind an 8-token draft leaks in ≈ 64 probes: the latency delta between *fully accepted* and *fully rejected* drafts was \~4.6 ms on an A100 server, clearly visible over a WAN link.
 
 
-### 🛡️ Hardening cheat-sheet
+### 🛡️ Hardening cheatsheet
 
 | Layer               | Mitigation                                                                                   | Overhead           |
 | ------------------- | -------------------------------------------------------------------------------------------- | ------------------ |
