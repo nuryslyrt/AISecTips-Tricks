@@ -20,7 +20,6 @@ A remote observer can exploit this deterministic gap to **binary-search secret s
 ![img](../assets/2025-06-27-draft-leak-timing-oracle.png)
 
 
-
 ### ⏱️ Proof-of-concept timing probe (vLLM ≥ 0.4.2)
 
 ```python
